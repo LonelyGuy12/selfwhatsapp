@@ -1,0 +1,28 @@
+# Binaries
+selfwhatsapp
+*.exe
+*.out
+
+# WhatsApp session data
+whatsmeow.db
+whatsmeow.db-shm
+whatsmeow.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Go build cache
+/vendor/
+
+# Environment / secrets
+.env
+*.env
+config.yaml
+config.json
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
