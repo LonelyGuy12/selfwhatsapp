@@ -19,6 +19,7 @@ func NewClient(ctx context.Context, container *sqlstore.Container) (*whatsmeow.C
 
 	clientLog := waLog.Stdout("Client", "INFO", true)
 	client := whatsmeow.NewClient(deviceStore, clientLog)
+	Client = client
 	client.AddEventHandler(HandleEvent)
 
 	return client, nil
